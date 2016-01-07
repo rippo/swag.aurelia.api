@@ -126,17 +126,22 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\AttendeesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\ApplicationSettings.cs" />
+    <Compile Include="Infrastructure\Meetup.cs" />
+    <Compile Include="Infrastructure\ICacheService.cs" />
+    <Compile Include="Infrastructure\InMemoryCache.cs" />
     <Compile Include="Infrastructure\MeetupApiCall.cs" />
+    <Compile Include="Models\EventDto.cs" />
+    <Compile Include="Models\RsvpDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
