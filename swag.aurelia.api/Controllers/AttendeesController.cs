@@ -7,7 +7,7 @@ namespace swag.aurelia.api.Controllers
 {
 
     //TO TEST
-    //  curl -H "Accept: application/json" "http://localhost:55376/api/values"
+    //  curl -H "Accept: application/json" "http://localhost:55376/api/attendees"
     //copy output and paste into
     //http://json.parser.online.fr/
 
