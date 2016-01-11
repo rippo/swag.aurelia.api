@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using swag.aurelia.api.Infrastructure;
 using swag.aurelia.api.Models;
 
@@ -11,6 +12,7 @@ namespace swag.aurelia.api.Controllers
     //copy output and paste into
     //http://json.parser.online.fr/
 
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class AttendeesController : ApiController
     {
         // GET api/attendees
